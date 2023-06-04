@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script containing character parameters and functions that accept values 
+/// to perform actions and change character statistics. 
+/// The script should include all references to audio, animator, and other components,
+/// as well as functions that modify parameters in those components.
+/// </summary>
+
 public class Stats : MonoBehaviour
 {
     [field: SerializeField]
@@ -46,11 +53,5 @@ public class Stats : MonoBehaviour
     protected void RunDeath()
     {
         data.RunDeathVisualization();
-        Invoke("Reset", RESET_TIME);
-    }
-
-    private void Reset()
-    {
-        meshRenderer.material = baseMaterial;
     }
 }

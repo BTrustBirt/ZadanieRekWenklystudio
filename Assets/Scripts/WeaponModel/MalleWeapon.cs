@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class MalleWeapon : Weapon
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<IAttack>() != null)
+        if (other.gameObject.GetInstanceID() != id && other.gameObject.GetComponent<IAttack>() != null)
         {
-            attackSystem = gameObject.GetComponent<AttackSystem>();
+            attackSystem = stats.GetComponent<AttackSystem>();
             statsEnemy = other.GetComponent<Stats>();
             Fire();
         }

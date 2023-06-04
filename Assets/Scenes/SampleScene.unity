@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &33857833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+  m_PrefabInstance: {fileID: 7657319886733894281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,8 +226,6 @@ GameObject:
   - component: {fileID: 1536141833}
   - component: {fileID: 1536141832}
   - component: {fileID: 1536141831}
-  - component: {fileID: 1536141830}
-  - component: {fileID: 1536141829}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -230,33 +233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1536141829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536141828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30ef5495f0c4c054696d72fd235f52df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 8b4ee9a79eef48c4fb2437f9fb214409, type: 2}
---- !u!114 &1536141830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536141828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521d4a06880ba5b479c6bf730cfb984f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  death: {fileID: 1536141829}
-  damageValue: 5
 --- !u!114 &1536141831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +337,8 @@ Transform:
   m_LocalPosition: {x: 4.22, y: 1.971523, z: -0.06297263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 33857833}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -379,8 +356,6 @@ GameObject:
   - component: {fileID: 1613741701}
   - component: {fileID: 1613741700}
   - component: {fileID: 1613741699}
-  - component: {fileID: 1613741698}
-  - component: {fileID: 1613741697}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -388,33 +363,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1613741697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613741696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 586d96ccce5eca342a0651c9910a2eed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: b3ec3339fbb355c41ba4aa9ebbc50d8b, type: 2}
---- !u!114 &1613741698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613741696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521d4a06880ba5b479c6bf730cfb984f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  death: {fileID: 1613741697}
-  damageValue: 5
 --- !u!114 &1613741699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,3 +471,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7657319886733894281
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1536141836}
+    m_Modifications:
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145888, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657319886767145889, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: m_Name
+      value: WeaponMalle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698101974608801528, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1536141831}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91663dfe8f847f341b1d22efdb7c7379, type: 3}

@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RocketWeapo : Weapon
+public class GunWeapon : Weapon
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<IAttack>() != null)
+        if (other.gameObject.GetInstanceID() != id && other.gameObject.GetComponent<IAttack>() != null)
         {
-            attackSystem = gameObject.GetComponent<AttackSystem>();
+            attackSystem = stats.GetComponent<AttackSystem>();
             statsEnemy = other.GetComponent<Stats>();
             Fire();
         }
@@ -17,7 +17,7 @@ public class RocketWeapo : Weapon
     public override void Fire()
     {
         Visualization();
-        attackSystem.SetDeath(death,statsEnemy);
+        attackSystem.SetDeath(death, statsEnemy);
         attackSystem.GetDamage(damageValue);
     }
 
